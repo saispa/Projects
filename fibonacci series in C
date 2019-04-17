@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{ int f1=0;
+int f2=1;
+int next, i, n;
+printf("Enter the number upto which you would want the fibonacci series:");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{ 
+if(n<=1)
+{ 
+if(n==0)
+{ printf("%d",f2);
+}
+else
+{ printf("%d",f2);
+printf("%d",f2);}
+}
+else 
+{ next= f1+ f2;
+f1=f2;
+f2=next;
+printf("%d",next);
+}
+}
+return 0;
+}
